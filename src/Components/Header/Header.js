@@ -8,7 +8,7 @@ export default class Header extends Component {
   render() {
     const star = [];
     for (let i = 0; i < 5; i++) {
-      star.push(<Star className="star ml-12" />);
+      star.push(<Star className="star ml-12" key={i} />);
     }
 
     return (
