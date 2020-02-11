@@ -25,7 +25,7 @@ export default class Praise extends Component {
           <div>
             <p className="compliment-main-title mt-60">Envie um elogio</p>
           </div>
-          <div>{figures}</div>
+          <div id="figure">{figures}</div>
 
           <div>
             <p className="compliment-main-title">Deixe um recado</p>
