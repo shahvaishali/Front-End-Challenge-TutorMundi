@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { figures } from "./SvgData.js";
+import "../Praise/Praise.css";
+import "../../App.css";
 
 export default class Praise extends Component {
   constructor(props) {
@@ -19,23 +21,34 @@ export default class Praise extends Component {
     let button;
     if (this.state.elogiar) {
       button = (
-        <div>
+        <div className="center">
           <div>
-            <p>Envie um elogio</p>
+            <p className="compliment-main-title mt-60">Envie um elogio</p>
           </div>
-          {figures}
+          <div>{figures}</div>
+
           <div>
-            <p>Deixe um recado</p>
+            <p className="compliment-main-title">Deixe um recado</p>
           </div>
           <div>
-            <textarea placeholder="Faça elogios, agradecimentos e sugestões. Os tutores adoram!"></textarea>
+            <textarea
+              className="compliment-msg"
+              placeholder="Faça elogios, agradecimentos e sugestões. Os tutores adoram!"
+            ></textarea>
           </div>
         </div>
       );
     } else {
       button = (
-        <div>
-          <button onClick={this.submitPraise}>ELOGIAR</button>
+        <div className="center">
+          <div>
+            <button
+              onClick={this.submitPraise}
+              className="praise-btn praise-btn-text mt-36"
+            >
+              ELOGIAR
+            </button>
+          </div>
         </div>
       );
     }

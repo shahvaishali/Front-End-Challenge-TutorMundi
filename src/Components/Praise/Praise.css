@@ -1,0 +1,79 @@
+.compliment-main-title {
+  width: 144px;
+  height: 24px;
+  font-family: WorkSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.83px;
+  color: #000000;
+  margin-right: 23%;
+  margin-bottom: 12px;
+}
+
+.compliment {
+  width: 88px;
+  height: 102px;
+  border-radius: 4px;
+  border: solid 2px #2cc6d0;
+  display: inline-block;
+}
+.icon {
+  margin: 18px 29px 6px;
+}
+.compliment-title {
+  margin: 0px 12px 18px;
+  width: 64px;
+  height: 24px;
+  font-family: WorkSans;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.83px;
+  text-align: center;
+  color: #2cc6d0;
+}
+
+.compliment-msg {
+  width: 504px;
+  height: 115px;
+  border-radius: 4px;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+::placeholder {
+  width: 447px;
+  height: 44px;
+  opacity: 0.1;
+  font-family: WorkSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: -0.2px;
+  color: #000000;
+  padding: 11px 21px 60px 20px;
+}
+.praise-btn {
+  width: 101px;
+  height: 34px;
+  border-radius: 100px;
+  border: solid 2px #2cc6d0;
+}
+.praise-btn-text {
+  font-family: WorkSans;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2cc6d0;
+}
