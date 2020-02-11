@@ -1,10 +1,12 @@
 import React from "react";
+import "../SubmitPraise/SubmitPraise.css";
+import "../../App.css";
 export default function SubmitPraise() {
   return (
-    <div>
+    <div className="center">
       <div>
-        <button>PULAR</button>
-        <button>CONFIRMAR</button>
+        <button className="skip mt-95 mr-28">PULAR</button>
+        <button className="confirm confirm-text mt-86">CONFIRMAR</button>
       </div>
     </div>
   );
