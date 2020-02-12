@@ -10,7 +10,6 @@ export default class Header extends Component {
     for (let i = 0; i < 5; i++) {
       star.push(<Star className="star ml-12" key={i} />);
     }
-
     return (
       <div className="center">
         <div>

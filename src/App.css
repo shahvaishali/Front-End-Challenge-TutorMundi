@@ -1,3 +1,4 @@
+/* margin and padding alignments */
 .center div {
   justify-content: center;
   display: flex;
@@ -30,3 +31,4 @@
 .mt-86 {
   margin-top: 86px;
 }
+/* end margin and padding allignments */
