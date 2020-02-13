@@ -3,13 +3,15 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Praise from "./Components/Praise/Praise";
 import SubmitPraise from "./Components/SubmitPraise/SubmitPraise";
+import ThankYou from "./Components/ThankYou/ThankYou";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       feedback: "",
-      praise: []
+      praise: [],
+      confirmar: false
     };
     this.getFeedback = this.getFeedback.bind(this);
     this.getPraise = this.getPraise.bind(this);
@@ -31,9 +33,16 @@ export default class App extends Component {
   submitData() {
     console.log("feedback is : " + this.state.feedback);
     console.log("praise is : " + this.state.praise.join(", "));
+    this.setState({
+      confirmar: true
+    });
   }
   render() {
-    return (
+    return this.state.confirmar ? (
+      <div>
+        <ThankYou />
+      </div>
+    ) : (
       <div>
         <Header />
         <Praise inputFeedback={this.getFeedback} inputPraise={this.getPraise} />
