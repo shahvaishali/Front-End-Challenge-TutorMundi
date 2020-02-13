@@ -43,6 +43,7 @@ export default class Praise extends Component {
       ]
     };
     this.submitPraise = this.submitPraise.bind(this);
+    this.getData = this.getData.bind(this);
   }
 
   /* Function will update the figures that are selected */
@@ -50,6 +51,15 @@ export default class Praise extends Component {
     let modCol = this.state.figColor;
     modCol[i] = !modCol[i];
     this.setState({ figColor: modCol });
+
+    //Passes selected figures to praise state in parent component
+    let praiseArray = [];
+    for (let i = 0; i < this.state.figColor.length; i++) {
+      if (this.state.figColor[i]) {
+        praiseArray.push(this.state.svg[i].caption);
+      }
+    }
+    this.props.inputPraise(praiseArray);
   }
 
   /* Switches state to display leave a message and praise box once praise/elogiar button is clicked */
@@ -58,6 +68,12 @@ export default class Praise extends Component {
     this.setState({
       elogiar: praise
     });
+  }
+
+  /* Passes textbox value to feedback state in parent component*/
+  getData(e) {
+    let fb = e.target.value;
+    this.props.inputFeedback(fb);
   }
 
   /* Child component, Figure is rendered */
@@ -96,6 +112,7 @@ export default class Praise extends Component {
             <textarea
               className="compliment-msg"
               placeholder="Faça elogios, agradecimentos e sugestões. Os tutores adoram!"
+              onChange={this.getData}
             ></textarea>
           </div>
         </div>
