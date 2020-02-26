@@ -1,3 +1,12 @@
+## Description
+
+- ReactJS Webapplication that allow users to rate the tutor.
+- Passes data from child to parent, parent to child and child to child
+- Modifies the svg's on click
+
+Please follow the [link](https://ratings-react-page-tutormundi-challenge.netlify.com/) for project demonstration
+-------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
